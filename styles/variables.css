@@ -2,3 +2,18 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --accent-color: #ff0070;
+  --title-size-main: 116px;
+  --font-family: IBM Plex Mono;
+  --font-weight-title: 700;
+  --color-text-header: rgba(219, 0, 255, 1);
+  --font-size-theme: rgba(255, 0, 112, 1);
+  --font-size: 18px;
+  --font-weight: 400;
+  --text-black: rgba(0, 0, 40, 1);
+  --bg-title: rgba(255, 0, 112, 1);
+  --line-height-main: 83%;
+  --bg-color-dark: rgba(0, 0, 40, 1);
+  --color-text-dv: rgba(241, 178, 206, 1);
+}

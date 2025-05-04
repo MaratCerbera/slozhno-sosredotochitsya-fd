@@ -2,4 +2,304 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-color: rgba(0, 0, 40, 1);
+  background-image: url(../images/cover-image.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
+
 }
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  min-block-size: 668px; 
+  justify-items: center;
+  align-items: center;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: var(--accent-color);
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  left: 340px;
+  top: 10px;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: var(--accent-color);
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  left: 10px;
+  top: 633px;
+}
+
+.header__rec {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 19px;
+  color: var(--accent-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  gap: 10px;
+  
+}
+
+.header__rec:after {
+  content: "";
+  align-items: center;
+  width: 9px;
+  height: 9px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.title {
+  color: var(--color-text-header);
+  font-family: var(--font-family), sans-serif;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: var(--line-height-main);
+  margin: 10px;
+}
+
+.header__theme-menu {
+  display: block;
+  justify-self: end;
+  align-self: baseline;
+  gap: 10px;
+}
+
+.header__theme-menu-list {
+  gap: 10px;
+  margin-block-start: 75px;
+  color: var(--accent-color);
+  font-family: var(--font-family), sans-serif;
+  font-size: var(--font-size);
+  line-height: 18px;
+}
+
+.header__theme-menu-item {
+  margin: 11.5px;
+  
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-transform: lowercase;
+  padding: 1.5px 13px;
+  
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.header-container {
+  margin-bottom: 20px;
+}
+
+.header-text {
+
+  font-family: var(--font-family), sans-serif;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-title);
+  color: var(--text-black);
+  background-color: var(--accent-color);
+  margin: 10px;
+}
+
+.main {
+  background-color: var(--bg-color-dark);
+  padding: 10px;
+}
+
+.main__section {
+  display: grid;
+  grid-template-rows: repeat(6, max-content);
+}
+
+.main__section-article-one {
+ margin-block-end: 22px;
+}
+
+.main__section-article-two {
+  margin-block-end: 22px;
+}
+
+.main__section-article-three {
+  display: grid;
+  grid-template-rows: repeat(10, min-content);
+}
+
+.main__section-title {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-title);
+  color: var(--accent-color);
+  padding-top: 30px;
+}
+
+.section__sub-title {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-title);
+  color: var(--bg-color-dark);
+  background-color: var(--accent-color);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.section__sub-title-regular {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--bg-color-dark);
+  background-color: var(--accent-color);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--color-text-dv);
+}
+
+.section-text-regular {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--color-text-dv);
+  margin-block-end: 11px;
+}
+
+.link-text {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--color-text-dv);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
+  line-height: 100%;
+}
+
+.gallery__section {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.picture__section-title {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-title);
+  color: var(--bg-color-dark);
+  background-color: var(--accent-color);
+  margin-top: 20px;
+  
+}
+
+.picture__section {
+  padding-block-start: 20px;
+  margin-block-end: 40px;
+}
+
+.picture-sunset {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.picture-icecream {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.picture-tape {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.picture-books {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.picture-street {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  min-block-size: 668px; 
+  justify-items: center;
+  align-items: center;
+}
+
+.focus__footer{
+  color: var(--color-text-header);
+  font-family: var(--font-family), sans-serif;
+  font-size: 116px;
+  text-shadow: 2px 2px 0 var(--accent-color);
+  line-height: var(--line-height-main);
+  font-weight: var(--font-weight-title);
+  grid-row: 2;
+  
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  margin-bottom: 624px;
+  left: 340px;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  margin-top: 620px;
+  margin-inline-end: 330px;
+}
+
