@@ -1,19 +1,28 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+
 :root {
-  --accent-color: #ff0070;
+  --accent-color: rgba(255, 0, 112, 1);
+  --bg-image: url(../images/cover-image-dark.png);
   --title-size-main: 116px;
   --font-family: IBM Plex Mono;
   --font-weight-title: 700;
-  --color-text-header: rgba(219, 0, 255, 1);
-  --font-size-theme: rgba(255, 0, 112, 1);
   --font-size: 18px;
   --font-weight: 400;
-  --text-black: rgba(0, 0, 40, 1);
-  --bg-title: rgba(255, 0, 112, 1);
   --line-height-main: 83%;
-  --bg-color-dark: rgba(0, 0, 40, 1);
-  --color-text-dv: rgba(241, 178, 206, 1);
+  --bg-color: rgba(0, 0, 40, 1);
+  --color-header-title: rgba(219, 0, 255, 1);
+  --color-shadow-title: rgba(255, 0, 112, 1);
+  --color-text: rgba(241, 178, 206, 1);
+  --color-main-title: rgba(255, 0, 112, 1);
+  --color-article-title: rgba(0, 0, 40, 1);
+  --title-decor:rgba(255, 0, 112, 1);
+  --color-list: rgba(255, 0, 112, 1);
+  --color-corners: rgba(255, 0, 112, 1);
+  --size-footer: 120px;
+  --color-hover: rgba(255, 0, 112, 0.4);
+  --font-size-footer-mobile: clamp(7rem, 60.741vw - 5.549rem, 7.25rem);
+  --font-size-footer-tab: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --font-size-footer-desk: clamp(9.8125rem, 9.8125rem + 0vw, 9.8125rem);
+  --corners-gap-mobile: 10px;
+  --corners-gap-desk: 20px;
 }
+
