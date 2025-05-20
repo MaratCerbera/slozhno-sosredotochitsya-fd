@@ -3,7 +3,7 @@
   --accent-color: rgba(255, 0, 112, 1);
   --bg-image: url(../images/cover-image-dark.png);
   --title-size-main: 116px;
-  --font-family: IBM Plex Mono;
+  --font-family: 'IBM Plex Mono'; 
   --font-weight-title: 700;
   --font-size: 18px;
   --font-weight: 400;
