@@ -29,7 +29,8 @@
   content: "";
   position: absolute;
   display: block;
-  background-color: var(--color-corners);
+  color: var(--color-corners);
+  background-color: transparent;
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--color-corners);
@@ -42,7 +43,8 @@
   content: "";
   position: absolute;
   display: block;
-  background-color: var(--color-corners);
+  color: var(--color-corners);
+  background-color: transparent;
   width: 25px;
   height: 25px;
   border-bottom: 1px solid var(--color-corners);
