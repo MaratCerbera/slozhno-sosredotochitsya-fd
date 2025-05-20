@@ -361,13 +361,9 @@
     padding-inline-start: 5px;
   }
   
-  .section__sub-title {
-    display: flex;
-    flex-direction: column;
-  }
-  
   .section__sub-title-advice {
-    margin-block-end: 12px;
+    margin-block-end: 9px;
+    margin-block-start: 2px;
   }
 
   .main__section {
@@ -382,8 +378,6 @@
     padding: 0;
   }
 
-  
-
   .section-text-regular {
     margin: 0;
     padding: 0;
@@ -391,6 +385,7 @@
 
   .section__sub-title-regular {
     padding: 0;
+    margin-block-start: 1px;
   }
 
   .gallery__section {
@@ -479,13 +474,13 @@
     padding: 0;
   }
 
-  .section__sub-title-advice {
-    margin-block-end: 10px;
-  }
-
   .text {
     margin: 0;
     line-height: 23.4px;
+  }
+
+  .main__section {
+    gap: 19px;
   }
 
   .main__section-a {
